@@ -1,3 +1,16 @@
+/* Colors Used:
+white #FFFFFF;
+Valhalla #241858;
+Silver Chalice #aaaaaa;
+Silver #cccccc;
+Mine Shaft #333333;
+Navajo White  #FFE1AA;
+Whiskey #D4AF6A;
+Hit Gray #9DA9AE;
+Lavender Purple #877CB0; 
+Abbey #4B4C4D;
+*/
+
 
 /*Media Styles:*/
 @media (max-width:767px) {
@@ -10,6 +23,18 @@
   .simple-slider .swiper-slide {
     height:360px;
   }
+}
+
+@media (max-width:767px){
+	.hidden-xs{
+		display: none!important;
+	}
+}
+
+@media (min-width:768px) and (max-width:991px){
+	.hidden-sm{
+		display: none!important;
+	}
 }
 
 @media (max-width:767px) {
@@ -44,31 +69,42 @@
   width:50px;
   margin-left:20px;
   margin-right:20px;
-  color:#241858;
+  color:#241858; /*Valhalla*/
+}
+
+/*Header Slider*/
+#slide1.swiper-slide {
+	background-image:url("../../assets/img/landscape1.png");
+}
+#slide2.swiper-slide {
+	background-image:url("../../assets/img/landscape2.jpg");
+}
+#slide3.swiper-slide {
+	background-image:url("../../assets/img/landscape3.jpg");
 }
 
 /*Name and Title:*/
 div.container-fluid.name {
-  background-color:#241858;
+  background-color:#241858; /*Valhalla*/
 }
 
 h1#name.text-center {
-  color:#ffffff;
+  color:#ffffff; /*white*/
   font-size:3.5em;
 }
 
 h4#title {
-  color:#ffffff;
+  color:#ffffff; /*white*/
   font-size:1.5em;
   font-stretch:condensed;
 }
 
 /* Menu: */
 .navbar-default {
-  background-image:linear-gradient(to bottom,#ffffff 0,#ffe1aa 100%);
+  background-image:linear-gradient(to bottom,#ffffff 0,#ffe1aa 100%); /* white to Navajo White Gradient */
   border-radius:1px;
   -webkit-box-shadow:inset 0 1px 0 rgba(0,0,0,0.0745098),0 1px 5px rgba(0,0,0,0.0745098);
-  box-shadow:inset 0 1px 0 #aaaaaa,0 1px 5px #cccccc;
+  box-shadow:inset 0 1px 0 #aaaaaa,0 1px 5px #cccccc; /*Silver*/
 }
 
 /* Body: */
@@ -84,8 +120,8 @@ body {
   font-family:'Open Sans';
   font-size:14px;
   line-height:1.42857143;
-  color:#333333;
-  background-color:#fff;
+  color:#333333; /*Mine Shaft*/
+  background-color:#fff; /*white*/
 }
 
 .h1, .h2, h1, h2 {
@@ -99,16 +135,16 @@ body {
 }
 
 i {
-  color:#d4af6a;
+  color:#d4af6a; /*Whiskey*/
 }
 
 a:focus, a:hover {
-  color:#ffe1aa;
+  color:#ffe1aa; /*Navajo White*/
   text-decoration:blink;
 }
 
 a {
-  color:#ffffff;
+  color:#ffffff; /*white*/
   text-decoration:none;
 }
 
@@ -160,26 +196,26 @@ figcaption {
 }
 
 a#myWorkLink {
-  color:#241858;
+  color:#241858; /*Valhalla*/
 }
 
 a#myWorkLink:focus, a#myWorkLink:hover {
-  color:#ffe1aa;
+  color:#ffe1aa; /*Navajo White*/
   text-decoration:blink;
 }
 
 /*Testimonials: */
 .testimonials-clean {
-  color:#333333;
-  background-color:#ffffff;
-  border-color:#877CB0;
+  color:#333333; /*Mine Shaft*/
+  background-color:#ffffff; /*white*/
+  border-color:#877CB0; /*Lavender Purple*/
   border-left:inherit;
   border-style:dotted;
   border-right:inherit;
 }
 
 .testimonials-clean p {
-  color:#4b4c4d;
+  color:#4b4c4d; /*Abbey*/
 }
 
 .testimonials-clean h2 {
@@ -208,7 +244,7 @@ a#myWorkLink:focus, a#myWorkLink:hover {
 
 .testimonials-clean .item .box {
   padding:30px;
-  background-color:#fff;
+  background-color:#fff; /*white*/
   position:relative;
 }
 
@@ -221,7 +257,7 @@ a#myWorkLink:focus, a#myWorkLink:hover {
   height:0;
   border:15px solid transparent;
   border-width:12px 15px;
-  border-top-color:#fff;
+  border-top-color:#fff; /*white*/
 }
 
 .testimonials-clean .item .author {
@@ -237,7 +273,7 @@ a#myWorkLink:focus, a#myWorkLink:hover {
 
 .testimonials-clean .item .title {
   font-size:13px;
-  color:#9da9ae;
+  color:#9da9ae; /*Hit Gray*/
 }
 
 .testimonials-clean .item .description {
@@ -267,8 +303,8 @@ p.copyright {
 
 .footer-basic {
   padding:40px 0;
-  background-color:#241858;
-  color:#ffffff;
+  background-color:#241858; /*Valhalla*/
+  color:#ffffff; /*white*/
 }
 
 .footer-basic ul {
@@ -307,7 +343,7 @@ p.copyright {
   display:inline-block;
   text-align:center;
   border-radius:50%;
-  border:1px solid #ccc;
+  border:1px solid #ccc; /*Silver*/
   margin:0 8px;
   color:inherit;
   opacity:0.75;
@@ -321,6 +357,6 @@ p.copyright {
   margin-top:15px;
   text-align:center;
   font-size:13px;
-  color:#aaa;
+  color:#aaa; /*Silver Chalice*/
   margin-bottom:0;
 }
