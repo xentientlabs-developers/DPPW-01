@@ -26,6 +26,7 @@ Abbey #4B4C4D;
 }
 
 @media (max-width:767px){
+<<<<<<< HEAD
   .hidden-xs{
     display: none!important;
   }
@@ -35,6 +36,17 @@ Abbey #4B4C4D;
   .hidden-sm{
     display: none!important;
   }
+=======
+	.hidden-xs{
+		display: none!important;
+	}
+}
+
+@media (min-width:768px) and (max-width:991px){
+	.hidden-sm{
+		display: none!important;
+	}
+>>>>>>> origin/master
 }
 
 @media (max-width:767px) {
@@ -74,6 +86,7 @@ Abbey #4B4C4D;
 
 /*Header Slider*/
 #slide1.swiper-slide {
+<<<<<<< HEAD
   background-image:url("../../assets/img/landscape1.png");
 }
 #slide2.swiper-slide {
@@ -81,6 +94,15 @@ Abbey #4B4C4D;
 }
 #slide3.swiper-slide {
   background-image:url("../../assets/img/landscape3.jpg");
+=======
+	background-image:url("../../assets/img/landscape1.png");
+}
+#slide2.swiper-slide {
+	background-image:url("../../assets/img/landscape2.jpg");
+}
+#slide3.swiper-slide {
+	background-image:url("../../assets/img/landscape3.jpg");
+>>>>>>> origin/master
 }
 
 /*Name and Title:*/
