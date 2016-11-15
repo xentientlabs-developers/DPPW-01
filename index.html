@@ -23,12 +23,12 @@
 <body>
 
 <!--Image Slider -->
-    <div class="simple-slider">
+    <div  id="to-top" class="hidden-xs hidden-sm simple-slider">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div id="to-top" class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
+                <div class="swiper-slide"  id="slide1"></div>
+                <div class="swiper-slide" id="slide2"></div>
+                <div class="swiper-slide" id="slide3"></div>
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
@@ -54,7 +54,7 @@
                     <li role="presentation"><a href="#about">About Me</a></li>
                     <li role="presentation"><a href="#work">My Work</a></li>
                     <li role="presentation"><a href="#testimonials">Testimonials </a></li>
-                    <li role="presentation"><a href="#contact">Contact</a></li>
+                    <li role="presentation"><a href="mailto:&amp;#99;&amp;#104;&amp;#114;&amp;#105;&amp;#115;&amp;#115;&amp;#105;&amp;#99;&amp;#111;&amp;#105;&amp;#108;&amp;#101;&amp;#114;&amp;#101;&amp;#101;&amp;#115;&amp;#98;&amp;#121;&amp;#64;&amp;#103;&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#46;&amp;#99;&amp;#111;&amp;#109;">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -69,20 +69,7 @@
                     <div class="col-md-12">
                         <h2 class="text-center"><i class="glyphicon glyphicon-info-sign"></i> About Me</h2></div>
                     <div class="col-md-6 text center">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sem diam, euismod non metus nec, vehicula eleifend lorem. Sed suscipit tempus ante, nec viverra risus iaculis in. Morbi sed tempor ipsum. Fusce molestie neque
-                            at pellentesque facilisis. Aenean iaculis lacinia libero, in iaculis mi sodales imperdiet. Sed suscipit et sem a cursus. Nullam felis sapien, sodales sed malesuada vel, iaculis non magna. In tempus tempor libero eu tempus.
-                            Sed egestas condimentum magna a auctor. Aliquam erat volutpat. In tempor magna ac enim consequat vehicula.Maecenas id risus nibh. Mauris fringilla interdum orci id euismod. Praesent pretium purus mi, pellentesque consequat
-                            sem varius quis. Nullam fringilla tortor in venenatis iaculis. Mauris gravida eros ut sapien lobortis ultricies. Nam id justo pulvinar, blandit justo id, mattis orci. Sed pellentesque dictum urna ultrices ultricies. Nam lacinia
-                            id lectus eget elementum. Fusce sem nisl, dapibus sit amet sapien a, aliquet consequat magna. Phasellus gravida dapibus mauris lacinia facilisis. Sed nibh eros, facilisis hendrerit tincidunt quis, convallis ac arcu. Fusce ligula
-                            diam, tincidunt fringilla lacus sed, pharetra mollis lectus.Vivamus nec lacinia tortor, sed consectetur nisl. Sed feugiat, velit et tincidunt auctor, tortor velit eleifend massa, non faucibus velit massa accumsan magna. Donec
-                            ac blandit turpis. Donec quis eleifend justo. Nullam et risus ullamcorper, tincidunt tortor ut, porta risus. Nulla in dolor in risus pellentesque volutpat sit amet a sem. Suspendisse maximus sem sem, in laoreet massa commodo
-                            nec. Donec nisi nulla, sollicitudin eget enim vel, tincidunt luctus sapien.Sed nec vestibulum sem. Aenean luctus lorem dolor, et varius mauris finibus at. Morbi quis felis at ante finibus vulputate a eu ligula. Sed eu neque
-                            ullamcorper, consectetur lectus a, consectetur tellus. Integer varius velit non magna aliquam eleifend. Nunc consequat leo vitae purus facilisis bibendum. Aliquam vel elit scelerisque, malesuada velit aliquet, auctor lacus.
-                            Morbi pharetra mauris vel lectus fringilla dictum. Donec tristique est velit, nec tincidunt sem lacinia vel. Pellentesque sit amet auctor nibh, at cursus turpis. Sed quis efficitur neque. Integer a mattis est. Maecenas accumsan
-                            velit ligula, non finibus tellus consequat ut. Aenean nec mattis justo. Vestibulum lacinia urna non tortor elementum mollis.Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas bibendum, sem in ullamcorper
-                            suscipit, felis nisi aliquam nisi, nec volutpat mauris metus et enim. Cras sit amet lacus eget nulla porttitor molestie tincidunt et nibh. Cras vehicula nisi est, auctor fringilla sapien volutpat eu. Vestibulum bibendum nulla
-                            ut neque sodales semper. Nunc semper pulvinar sem, eu fringilla nibh vestibulum quis. Cras iaculis blandit justo at sagittis. Vivamus gravida nisi vel facilisis porttitor. Ut ac tincidunt magna, et semper nibh. Curabitur mollis
-                            ipsum et fermentum fringilla. Quisque a sodales leo. Donec in laoreet metus. Duis porta efficitur augue. Ut mattis mi vel magna volutpat, eu porttitor turpis auctor. </p>
+                        <p>After spending more than 10 years as a tv anchor and reporter, Chrissi decided she wanted to spend more time with her young children.  Now that they’re in school, Chrissi has used her talents to become an effective spokesperson for a number of area businesses.  Chrissi has pitched everything from cars to furniture to grills.  Her ease in front of the camera and a microphone makes her a strong salesperson for any product.</p>
                     </div>
                     <div class="col-md-6">
                         <div class="carousel slide" data-ride="carousel" id="carousel-1">
@@ -120,48 +107,75 @@
                 <div class="row">
                     <div class="col-md-6 text center">
                         <figure class="video-wrapper">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/5rdna-iEgvs" frameborder="0" allowfullscreen></iframe>
+							<!--KTBSFirstNewsTubbs3-->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/8nkiqaVd4NY" frameborder="0" allowfullscreen></iframe>
                         </figure>
                     </div>
                     <div class="col-md-6">
                         <figure class="video-wrapper">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/pGTlAIIapoc" frameborder="0" allowfullscreen></iframe>
+							<!--HOPEFOUND PROMO 2-->
+                            <iframe width="540" height="339" src="https://www.youtube.com/embed/pGTlAIIapoc" frameborder="0" allowfullscreen></iframe>
                         </figure>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 text center">
                         <figure class="video-wrapper">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/RDA4NAhyiv0" frameborder="0" allowfullscreen></iframe>
+						<!--MM314MARCH15H-->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/5rdna-iEgvs" frameborder="0" allowfullscreen></iframe>
                         </figure>
                     </div>
                     <div class="col-md-6 text center">
                         <figure class="video-wrapper">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/NS8o63tCNbs" frameborder="0" allowfullscreen></iframe>
+						<!--GOING ON NOW EDIT-->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/FQ-Nh7PnYYo" frameborder="0" allowfullscreen></iframe>
                         </figure>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 text center">
                         <figure class="video-wrapper">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/PUrxr-RWQ6k" frameborder="0" allowfullscreen></iframe>
+						<!--MOHAWK 14 2 EDIT-->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/RCnUCi6olDk" frameborder="0" allowfullscreen></iframe>
                         </figure>
                     </div>
                     <div class="col-md-6 text center">
                         <figure class="video-wrapper">
+						<!--MV615SAVE30H-->
+                            <iframe width="540" height="339" src="https://www.youtube.com/embed/RDA4NAhyiv0" frameborder="0" allowfullscreen></iframe>
+                        </figure>
+                    </div>
+                </div>
+				<div class="row">
+                    <div class="col-md-6 text center">
+                        <figure class="video-wrapper">
+						<!--MV316SAFE30H-->
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/Cd70APfrEUE" frameborder="0" allowfullscreen></iframe>
                         </figure>
                     </div>
+                    <div class="col-md-6 text center">
+                        <figure class="video-wrapper">
+                            <!--Moffitt VW August 2016 1-->
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/YTacrY-IbZU" frameborder="0" allowfullscreen></iframe>
+                        </figure>
+                    </div>
                 </div>
+				<!--Audio -->
+				<div class="col-md-12">
+                        <h3 class="text-center">Audio </h3>
+				</div>
+				<div class="col-md-6 text center">
+                         <audio controls>
+							  <!-- EXAMPLE: <source src="horse.ogg" type="audio/ogg"> -->
+							  <!-- ADD THREE AUDIO CLIPS HERE -->
+							  <source src="" type="">
+							  <source src="" type="">
+							  <source src="" type="">
+							Your browser does not support the audio element.
+						</audio> 
+               </div>
             </div>
         </section>
-        <div class="row">
-            <div class="col-md-12">
-                <a href="https://www.youtube.com/channel/UCw_Kk3dSyoJ3rUcFqR5dNMw" target="_blank" id="myWorkLink">
-                    <p class="text-uppercase text-center">Click here to view more of my work.</p>
-                </a>
-            </div>
-        </div>
 
         <!-- Paralax Banner 2 -->
         <div class="hidden-xs hidden-sm paralax" id="second-banner"></div>
@@ -171,47 +185,49 @@
           <div class="container">
             <div class="intro">
                 <h2 class="text-center"><i class="glyphicon glyphicon-thumbs-up"></i> Testimonials </h2>
-                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sem diam, euismod non metus nec, vehicula eleifend lorem. </p>
-            </div>
+            </div> <!--End of Div Intro -->
             <div class="row people">
                 <div class="col-md-4 col-sm-6 item">
-                    <div class="box">
-                        <p class="description"><em>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</em>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..." </p>
-                    </div>
-                    <div class="author"><img class="img-circle" src="assets/img/1.jpg">
-                        <h5 class="name">John Doe</h5>
-                        <p class="title">So and so of Place</p>
-                    </div>
-                </div>
+                    <div class="box"> 
+                        <p class="description"><em>“What you see is what you get with Chrissi.  She is a very warm, caring person and you can see that in her on camera presence.  Any business would be lucky to have her represent them.”</em></p>
+                    </div> <!--End of Div col-md-4 col-sm-6 item -->
+                    <div class="author">
+                        <h5 class="name">Ed Walsh</h5>
+                        <p class="title">Former Anchor KTBS 3 News.</p>
+                    </div> <!-- End of Div Author -->
+                </div> <!--End of Div col-md-4 col-sm-6 item -->
                 <div class="col-md-4 col-sm-6 item">
                     <div class="box">
-                        <p class="description"><em>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</em>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...".</p>
-                    </div>
-                    <div class="author"><img class="img-circle" src="assets/img/1.jpg">
-                        <h5 class="name">Jone Doe</h5>
-                        <p class="title">So and so of Place2</p>
-                    </div>
-                </div>
+                        <p class="description"><em>"Tubbs Hardware needed a spokesperson for several early morning live commercials, Chrissi was the perfect person for this. With very little notice she came through for us. Wow, what a great job she did and was so much fun to work with."</em></p>
+                    </div> <!--End of Div col-md-4 col-sm-6 item -->
+                    <div class="author">
+                        <h5 class="name">Don Tubbs</h5>
+                        <p class="title">Owner of Tubbs Hardware</p>
+                    </div><!-- End of Div Author -->
+                </div> <!--End of Div col-md-4 col-sm-6 item -->
                 <div class="col-md-4 col-sm-6 item">
-                    <div class="box">
-                        <p class="description"><em>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</em>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
-                    </div>
-                    <div class="author"><img class="img-circle" src="assets/img/1.jpg">
-                        <h5 class="name">Jane Doe</h5>
-                        <p class="title">So and so of Place3</p>
-                    </div>
-                </div>
-            </div>
-         </div>
-      </div>
+                    <div>
+                        <p class="description"><em>"Chrissi has been an invaluable asset as our spokesperson. Chrissi is a true professional that has a sincere, enthusiastic and upbeat approach which grabs the audiences attention. Customers often come into our dealerships and tell me how much they love seeing Chrissi on our commercials and at our events. She consistently delivers the highest quality of work with a positive attitude."</em></p>
+                    </div> <!--End of Div col-md-4 col-sm-6 item -->
+                    <div>
+                        <h5 class="name">Susan Moffitt</h5>
+                        <p class="title">Owner at Moffitt Volkswagen, Porsche, Audi, Mazda</p>
+                    </div><!-- End of Div Author -->
+                </div> <!--End of Div col-md-4 col-sm-6 item -->
+            </div> <!--End of Div row People -->
+         </div> <!--End of Div Container -->
+      </div> <!--End of Div Testimonials -->
 
     <!--Footer -->
       <div class="footer-basic">
         <footer>
             <a href="mailto:&amp;#99;&amp;#104;&amp;#114;&amp;#105;&amp;#115;&amp;#115;&amp;#105;&amp;#99;&amp;#111;&amp;#105;&amp;#108;&amp;#101;&amp;#114;&amp;#101;&amp;#101;&amp;#115;&amp;#98;&amp;#121;&amp;#64;&amp;#103;&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#46;&amp;#99;&amp;#111;&amp;#109;">
                 <h3 class="text-center"><i class="glyphicon glyphicon-envelope"></i> CONTACT ME!</h3></a>
-            <div class="social"><a href="#" target="_blank"><i class="icon ion-social-instagram"></i></a><a href="#" target="_blank"><i class="icon ion-social-twitter"></i></a><a href="#" target="_blank"><i class="icon ion-social-facebook"></i></a><a href="https://www.youtube.com/channel/UCw_Kk3dSyoJ3rUcFqR5dNMw"
-                target="_blank"><i class="icon ion-social-youtube"></i></a></div>
+            <div class="social">
+                <a href="https://www.instagram.com/chrissicoile/?hl=en" target="_blank"><i class="icon ion-social-instagram"></i></a>
+                <a href="https://twitter.com/ChrissiCoile" target="_blank"><i class="icon ion-social-twitter"></i></a>
+                <a href="https://www.facebook.com/chrissi.coile.5" target="_blank"><i class="icon ion-social-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UCw_Kk3dSyoJ3rUcFqR5dNMw" target="_blank"><i class="icon ion-social-youtube"></i></a></div>
             <ul class="list-inline">
                 <li><a href="#to-top">Home</a></li>
                 <li><a href="#about">About Me</a></li>
