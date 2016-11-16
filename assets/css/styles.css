@@ -13,6 +13,17 @@ Abbey #4B4C4D;
 
 
 /*Media Styles:*/
+@media (max-width:767px) {
+  .simple-slider .swiper-button-next, .simple-slider .swiper-button-prev {
+    display:none;
+  }
+}
+
+@media (max-width:767px) {
+  .simple-slider .swiper-slide {
+    height:50px;
+  }
+}
 
 @media (max-width:767px){
   .hidden-xs{
@@ -25,15 +36,15 @@ Abbey #4B4C4D;
     display: none!important;
   }
 
-	.hidden-xs{
-		display: none!important;
-	}
+  .hidden-xs{
+    display: none!important;
+  }
 }
 
 @media (min-width:768px) and (max-width:991px){
-	.hidden-sm{
-		display: none!important;
-	}
+  .hidden-sm{
+    display: none!important;
+  }
 }
 
 @media (max-width:767px) {
@@ -60,7 +71,6 @@ Abbey #4B4C4D;
 
 .carousel {
   margin-bottom:0px;
-
 }
 
 .carousel-caption {
@@ -85,8 +95,20 @@ Abbey #4B4C4D;
   left:0;
   width:100%;
   text-align:center;
-  text-shadow: 0 1px 0 black;
 }
+
+..overlay h1 {
+  margin-bottom: 20px;
+  font-size: 53px;
+  line-height: 1.4;
+}
+
+.overlay p {
+  margin-bottom: 20px;
+  font-size: 23px;
+  line-height: 1.4;
+}
+
 
 /* Menu: */
 .navbar-default {
@@ -119,8 +141,18 @@ body {
   font-family:'Playfair Display SC';
 }
 
+.h1, h1 {
+  font-size:7em;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.5);
+}
+
 .h3, h3 {
   font-family:'Trocchi';
+}
+
+.h5, h5 {
+  font-size:1.8em;
+  line-height:1.5em;
 }
 
 i {
@@ -142,11 +174,6 @@ a {
   padding:50px 0;
 }
 
-p{
-  font-stretch: expanded;
-  font-size: 2em;
-}
-
 /* Paralax: */
 .paralax {
   height:300px;
@@ -154,14 +181,6 @@ p{
   background-position:center;
   background-repeat:no-repeat;
   background-size:cover;
-}
-
-#first-banner.paralax {
-  background-image:url("../../assets/img/background1.jpg");
-}
-
-#second-banner.paralax {
-  background-image:url("../../assets/img/background2.jpg");
 }
 
 /* Work */
@@ -353,4 +372,61 @@ p.copyright {
   font-size:13px;
   color:#aaa; /*Silver Chalice*/
   margin-bottom:0;
+}
+
+/* Flattened Video [CAM] */
+
+.youtube-player {
+  position: relative;
+  padding-bottom: 56.23%;
+  /* Use 75% for 4:3 videos */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  margin: 5px;
+}
+
+.youtube-player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: transparent;
+}
+
+.youtube-player img {
+  bottom: 0;
+  display: block;
+  left: 0;
+  margin: auto;
+  max-width: 100%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  height: auto;
+  cursor: pointer;
+  -webkit-transition: .4s all;
+  -moz-transition: .4s all;
+  transition: .4s all;
+}
+
+.youtube-player img:hover {
+    -webkit-filter: brightness(75%);
+}
+
+.youtube-player .play {
+  height: 72px;
+  width: 72px;
+  left: 50%;
+  top: 50%;
+  margin-left: -36px;
+  margin-top: -36px;
+  position: absolute;
+  background: url("//i.imgur.com/TxzC70f.png") no-repeat;
+  cursor: pointer;
 }
