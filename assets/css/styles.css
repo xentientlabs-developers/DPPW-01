@@ -13,17 +13,6 @@ Abbey #4B4C4D;
 
 
 /*Media Styles:*/
-@media (max-width:767px) {
-  .simple-slider .swiper-button-next, .simple-slider .swiper-button-prev {
-    display:none;
-  }
-}
-
-@media (max-width:767px) {
-  .simple-slider .swiper-slide {
-    height:360px;
-  }
-}
 
 @media (max-width:767px){
   .hidden-xs{
@@ -71,6 +60,7 @@ Abbey #4B4C4D;
 
 .carousel {
   margin-bottom:0px;
+
 }
 
 .carousel-caption {
@@ -95,20 +85,8 @@ Abbey #4B4C4D;
   left:0;
   width:100%;
   text-align:center;
+  text-shadow: 0 1px 0 black;
 }
-
-  ..overlay h1 {
-    margin-bottom: 20px;
-    font-size: 53px;
-    line-height: 1.4;
-  }
-
-  .overlay p {
-    margin-bottom: 20px;
-    font-size: 23px;
-    line-height: 1.4;
-  }
-
 
 /* Menu: */
 .navbar-default {
@@ -162,6 +140,11 @@ a {
 /* About */
 .about {
   padding:50px 0;
+}
+
+p{
+  font-stretch: expanded;
+  font-size: 2em;
 }
 
 /* Paralax: */
