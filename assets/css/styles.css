@@ -13,17 +13,6 @@ Abbey #4B4C4D;
 
 
 /*Media Styles:*/
-@media (max-width:767px) {
-  .simple-slider .swiper-button-next, .simple-slider .swiper-button-prev {
-    display:none;
-  }
-}
-
-@media (max-width:767px) {
-  .simple-slider .swiper-slide {
-    height:360px;
-  }
-}
 
 @media (max-width:767px){
   .hidden-xs{
@@ -67,46 +56,36 @@ Abbey #4B4C4D;
   }
 }
 
-/*Image Slider:*/
-.simple-slider .swiper-slide {
-  height:500px;
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-position:center;
+/* CAROUSEL */
+
+.carousel {
+  margin-bottom:0px;
+
 }
 
-.simple-slider .swiper-button-next, .simple-slider .swiper-button-prev {
-  width:50px;
-  margin-left:20px;
-  margin-right:20px;
-  color:#241858; /*Valhalla*/
+.carousel-caption {
+  z-index: 1;
+}
+.carousel .item {
+  height: 550px;
+  background-color:rgba(212,175,106,0.14);;
+}
+.carousel img {
+  position: center;
+  top: 0;
+  left: 0;
+  min-height: 550px;
 }
 
-/*Header Slider*/
-#slide1.swiper-slide {
-  background-image:url("../../assets/img/landscape1.png");
-}
-#slide2.swiper-slide {
-  background-image:url("../../assets/img/landscape2.jpg");
-}
-#slide3.swiper-slide {
-  background-image:url("../../assets/img/landscape3.jpg");
-}
-
-/*Name and Title:*/
-div.container-fluid.name {
-  background-color:#241858; /*Valhalla*/
-}
-
-h1#name.text-center {
-  color:#ffffff; /*white*/
-  font-size:3.5em;
-}
-
-h4#title {
-  color:#ffffff; /*white*/
-  font-size:1.5em;
-  font-stretch:condensed;
+.overlay { 
+  color:#fff;
+  position:absolute;
+  z-index:12;
+  top:35%;
+  left:0;
+  width:100%;
+  text-align:center;
+  text-shadow: 0 1px 0 black;
 }
 
 /* Menu: */
@@ -161,6 +140,11 @@ a {
 /* About */
 .about {
   padding:50px 0;
+}
+
+p{
+  font-stretch: expanded;
+  font-size: 2em;
 }
 
 /* Paralax: */
